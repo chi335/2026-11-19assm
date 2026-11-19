@@ -65,11 +65,12 @@ RentalInvoice ENDS
 ```
 
 State whether or not each of the following declarations is valid:
-a. rentals RentalInvoice <>
-b. RentalInvoice rentals <>
-c. march RentalInvoice <'12345',10,0>
-d. RentalInvoice <,10,0>
-e. current RentalInvoice <,15,0,0>
+
+* **a.** `rentals RentalInvoice <>`
+* **b.** `RentalInvoice rentals <>`
+* **c.** `march RentalInvoice <'12345',10,0>`
+* **d.** `RentalInvoice <,10,0>`
+* **e.** `current RentalInvoice <,15,0,0>`
 
 (2. 다음 구조체가 정의되어 있다고 가정합니다. 아래의 각 선언문이 유효한지[Valid] 유효하지 않은지[Invalid] 기술하세요.)
 
@@ -77,11 +78,11 @@ e. current RentalInvoice <,15,0,0>
 
 ## 💡 답
 
-* **a. `rentals RentalInvoice <>`** ➜ **Valid (유효함)**
-* **b. `RentalInvoice rentals <>`** ➜ **Invalid (유효하지 않음)**
-* **c. `march RentalInvoice <'12345',10,0>`** ➜ **Valid (유효함)**
-* **d. `RentalInvoice <,10,0>`** ➜ **Invalid (유효하지 않음)**
-* **e. `current RentalInvoice <,15,0,0>`** ➜ **Invalid (유효하지 않음)**
+* **a.** `rentals RentalInvoice <>` ➜ **Valid (유효함)**
+* **b.** `RentalInvoice rentals <>` ➜ **Invalid (유효하지 않음)**
+* **c.** `march RentalInvoice <'12345',10,0>` ➜ **Valid (유효함)**
+* **d.** `RentalInvoice <,10,0>` ➜ **Invalid (유효하지 않음)**
+* **e.** `current RentalInvoice <,15,0,0>` ➜ **Invalid (유효하지 않음)**
 
 ---
 
@@ -111,5 +112,6 @@ e. current RentalInvoice <,15,0,0>
 
 * **e. `current RentalInvoice <,15,0,0>`** ➜ **Invalid**
   - **이유:** 초기화 값의 개수가 초과되었습니다. `RentalInvoice` 구조체 필드는 총 3개인데, `<, 15, 0, 0>`으로 4개의 값을 전달했기 때문에 컴파일 에러가 발생합니다.
+
  
----
+  ---
